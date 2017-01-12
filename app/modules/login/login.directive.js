@@ -10,9 +10,9 @@ module.exports = {
             },
             template: 'User : {{user.firstName}} {{user.lastName}}',
             link: function(scope, element, attrs) {
-                console.log("input directive - scope: ", scope);
-                console.log("input directive - scope: ", element);
-                console.log("input directive - scope: ", attrs);
+                //console.log("input directive - scope: ", scope);
+                //console.log("input directive - scope: ", element);
+                //console.log("input directive - scope: ", attrs);
             }
         };
         /*var directive = {};

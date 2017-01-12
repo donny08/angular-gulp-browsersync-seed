@@ -6,6 +6,7 @@
         .run(run);
 
     config.$inject = ['$stateProvider', '$locationProvider', '$httpProvider', '$urlRouterProvider'];
+    
     require('./modules/login');
     require('./modules/register');
     require('./modules/forgotpassword');
