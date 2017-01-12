@@ -1,0 +1,56 @@
+{
+  "name": "node-auth",
+  "description": "<Application description>",
+  "version": "0.0.0",
+  "contributors": [
+    {
+      "name": "<Name>",
+      "email": "<emailaddress>"
+    }
+  ],
+  "dependencies": {
+    "async": "^1.5.2",
+    "body-parser": "^1.10.0",
+    "connect": "3.0.1",
+    "connect-timeout": "^1.6.0",
+    "crypto": "0.0.3",
+    "express": "4.4.4",
+    "jwt-simple": "^0.3.1",
+    "lodash": "^3.1.0",
+    "moment": "^2.8.4",
+    "moment-timezone": "^0.2.5",
+    "mongodb": "^1.4.20",
+    "mysql": "^2.5.5",
+    "node-statsd": "0.0.7",
+    "node-uuid": "^1.4.1",
+    "nodemailer": "^0.7.1",
+    "passport": ">= 0.1.6",
+    "passport-jwt": "^2.2.1",
+    "passport-local": ">= 0.1.6",
+    "query-string": "^1.0.0",
+    "redis": "~0.12.1",
+    "request": "^2.48.0",
+    "restler": "~3.2.2",
+    "serve-static": "1.2.3",
+    "socket.io": "^1.2.1",
+    "socket.io-client": "^1.4.5",
+    "winston": "~0.7.3",
+    "winston-mongodb": "~0.5.1"
+  },
+  "keywords": [
+    "websocket",
+    "server",
+    "realtime",
+    "engine.io",
+    "cluster",
+    "parallelized"
+  ],
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-apidoc": "^0.11.0",
+    "grunt-bump": "^0.8.0",
+    "grunt-contrib-yuidoc": "^1.0.0",
+    "grunt-conventional-changelog": "^6.1.0"
+  }
+}

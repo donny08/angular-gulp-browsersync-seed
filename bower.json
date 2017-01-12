@@ -1,0 +1,16 @@
+{
+  "name": "xprep-tutor-web",
+  "description": "",
+  "version": "1.0.0",
+  "homepage": "",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "*",
+    "angular-ui-router": "*",
+    "angular-messages": "^1.5.7",
+    "angular-cookies": "^1.6.0",
+    "bootstrap": "^3.3.7",
+    "AngularJS-Toaster": "angularjs-toaster#^2.1.0",
+    "ngstorage": "^0.3.11"
+  }
+}

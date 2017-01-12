@@ -1,0 +1,12 @@
+body {
+    font-family: 'Helvetica';
+    background-color: #F6F9F9;
+}
+
+a {
+    cursor: pointer;
+}
+
+.left3 {
+    margin-left: -3%;
+}

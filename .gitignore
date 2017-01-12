@@ -1,0 +1,5 @@
+node_modules
+server/node_modules
+dist
+app/bower_components/
+app/build/
