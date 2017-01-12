@@ -3,6 +3,9 @@
 module.exports = function($scope, $location, $state, toaster, LoginService,GENERAL_CONFIG) {
     var vm = this;
     vm.login = login;
+    vm.jakob = {};
+    vm.jakob.firstName = "Jakob";
+    vm.jakob.lastName  = "Jenkov";
 
     function login() {
         vm.dataLoading = true;

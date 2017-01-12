@@ -48,7 +48,7 @@ For Building the production version which would make your app ready for deployme
 gulp build
 ```
 
-The above command minifies the js and css files and concatenates them too. The vendor and user js and css files are seperated into different files. All the production file can be found in `dist/` folder. 
+The above command minifies the js,html and css files and concatenates them too. The vendor and user js and css files are seperated into different files. All the production file can be found in `dist/` folder. 
 
 
 ### Directory Layout
