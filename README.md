@@ -71,6 +71,20 @@ app/                    --> all of the source files for the application
   index.html            --> app layout file (the main html template file of the app)
 dist/                   --> The build would be found here which could be pushed to production
 ```
+### Run Node Backend
+
+ cd server
+ npm install
+ node app.js
+
+### Trobleshooting while installing dependencies for Node Backend
+
+"Error: Cannot find module '../build/Release/bson'"
+Got it fixed by below steps :
+
+1. Create folder "Release" inside "node_modules\bson\build\" location
+2. Copy bson.js from "node_modules\bson\browser_build\"
+3. Paste bson.js inside "node_modules\bson\build\Release" folder.
 
 ### Contribute 
 
