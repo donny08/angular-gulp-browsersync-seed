@@ -1,0 +1,2 @@
+# angular-gulp-browsersync-seed
+This is a basic starter project to initialize your project using [AngularJS](http://angularjs.org/) and [Gulp](http://gulpjs.com/). It follows MVC architecture and uses the perfect app structure to enhance productivity.  This seed contains a sample AngularJS application with useable Gulp tasks which comes in handy for the build process. This app also uses [Bower](https://bower.io/) as the client-side package manager.
