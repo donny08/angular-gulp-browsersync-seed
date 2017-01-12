@@ -28,6 +28,7 @@ After completing this command, run the following command to install the bower co
 
 ```
 bower install
+
 ```
 
 ### Using Gulp
