@@ -24,13 +24,6 @@ I have set pre-install script which installs bower too. Run this command to inst
 ```
 npm install
 ```
-After completing this command, run the following command to install the bower components which would install them in `app/bower_components`. This folder is predefined in `.bowerrc` file in the root folder.
-
-```
-bower install
-
-```
-
 ### Using Gulp
 
 I have written some useful tasks in gulp to manage the build and for development web server.

@@ -22,6 +22,7 @@ var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var gutil = require('gulp-util');
 var minifyHtml = require("gulp-minify-html");
+var gulpNgConfig = require('gulp-ng-config');
 
 var bundlePaths = {
     src: [
@@ -76,7 +77,7 @@ gulp.task('serve', ['clean', 'browserify'], function() {
 
 // Lint
 gulp.task('lint', function() {
-    gulp.src(['./app/modules/**/*.js', '!./app/bower_components/**'])
+    gulp.src(['./app/modules/**/*.js', './app/ui_components/*.js', './app/config.js'])
         .pipe(jshint())
         .pipe(jshint.reporter('default'))
         .pipe(jshint.reporter('fail'));
@@ -94,13 +95,20 @@ gulp.task('clean:build', function() {
 
 gulp.task('minify-css', function() {
     var opts = { comments: true, spare: true };
-    gulp.src(['./app/**/*.css', '!./app/bower_components/**'])
+    gulp.src(['./app/**/*.css'])
         .pipe(minifyCSS(opts))
         .pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('minify-js', function() {
-    gulp.src(['./app/modules/**/*.js', '!./app/bower_components/**'])
+    gulp.src('./app/ui_components/**/*.js')
+        .pipe(uglify({
+            // inSourceMap:
+            // outSourceMap: "app.js.map"
+        }))
+        .pipe(gulp.dest('./dist/ui_components/'));
+
+    gulp.src('./app/config.js')
         .pipe(uglify({
             // inSourceMap:
             // outSourceMap: "app.js.map"
@@ -160,16 +168,33 @@ gulp.task('browserifyDist', function() {
         .pipe(gulp.dest('./dist/build'));
 });
 
+gulp.task('dev', function() {
+    gulp.src('config.json')
+        .pipe(gulpNgConfig('config', {
+            environment: 'development'
+        }))
+        .pipe(gulp.dest('./app/'));
+});
+
+gulp.task('prod', function() {
+    gulp.src('config.json')
+        .pipe(gulpNgConfig('config', {
+            environment: 'production'
+        }))
+        .pipe(uglify({}))
+        .pipe(gulp.dest('./dist/'));
+});
+
 // *** default task *** //
 gulp.task('default', function() {
     runSequence(
-        ['clean'], ['browserify', 'serve']
+        ['clean'], ['dev', 'browserify', 'serve']
     );
 });
 
 // *** build task *** //
 gulp.task('build', function() {
     runSequence(
-        ['clean:build'], ['minify-css', 'browserifyDist', 'minify-config-js', 'minify-html', 'copy-bower-components']
+        ['clean:build'], ['prod', 'minify-js', 'minify-css', 'minify-html', 'browserifyDist']
     );
 });

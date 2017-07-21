@@ -9,15 +9,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <base href="/" />
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
-    <link type="text/css" rel="stylesheet" href="/bower_components/AngularJS-Toaster/toaster.min.css" />
-    <!--Use this format for gulp task useref to minify all stylesheets to compress into one -->
-    <!--build:css css/main.min.css-->
+    <link rel="stylesheet" href="/ui_components/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="/ui_components/toaster.css" />
     <link rel="stylesheet" href="css/main.css">
-    <!-- endbuild -->
-    <!--build:css css/vendor.min.css-->
-    <!-- Include Vendor css files here -->
-    <!-- endbuild -->
 </head>
 
 <body>
@@ -29,30 +23,14 @@
             </div>
         </div>
     </div>
-    <!-- Include all vendor js in here -->
-    <!--build:js js/vendor.min.js-->
-    <script src="/bower_components/angular/angular.js"></script>
-    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="/bower_components/angular-messages/angular-messages.min.js"></script>
-    <script src="/bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="/bower_components/AngularJS-Toaster/toaster.min.js"></script>
-    <script src="/bower_components/ngstorage/ngStorage.min.js"></script>
+    <script src="/ui_components/angular.js"></script>
+    <script src="/ui_components/angular-ui-router.js"></script>
+    <script src="/ui_components/angular-messages.js"></script>
+    <script src="/ui_components/angular-cookies.js"></script>
+    <script src="/ui_components/toaster.js"></script>
+    <script src="/ui_components/ngStorage.js"></script>
     <script src="config.js"></script>
-    <script src="/build/bundled.js"></script>    
-    <!-- <script src="modules/login/login.controller.js"></script>
-    <script src="modules/login/login.services.js"></script>    
-    <script src="modules/register/register.controller.js"></script>
-    <script src="modules/register/register.services.js"></script> -->
-    <!-- endbuild -->
-    <!-- Include all user js in here -->
-    <!--build:js js/main.min.js -->
-    <!--  <script src='js/main/main.js'></script>
-<script src="js/main/main.config.js"></script>
-<script src="js/main/main.services.js"></script>
-<script src="js/main/main.filters.js"></script>
-<script src="js/main/main.directives.js"></script>
-<script src="js/main/main.controllers.js"></script> -->
-    <!-- endbuild -->
+    <script src="/build/bundled.js"></script>
 </body>
 
 </html>
