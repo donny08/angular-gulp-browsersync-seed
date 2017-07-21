@@ -49,7 +49,7 @@ The above command minifies the js,html and css files and concatenates them too. 
 
 ```
 app/                    --> all of the source files for the application
-  bower_components/     --> all the angular components and the custom dependencies would be found here  
+  ui_components/     --> all the angular components and the custom dependencies would be found here  
   modules/           		--> all the app specific javascript files
     login/
       	index.js             	--> Main JavaScript file      	
