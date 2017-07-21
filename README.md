@@ -1,6 +1,6 @@
 # angular-gulp-browsersync-seed
 
-This is a basic starter project to initialize your project using [AngularJS](http://angularjs.org/) and [Gulp](http://gulpjs.com/). It follows MVC architecture and uses the perfect app structure to enhance productivity. This seed contains a sample AngularJS application with useable Gulp tasks which comes in handy for the build process. This app also uses [Bower](https://bower.io/) as the client-side package manager.
+This is a basic starter project to initialize your project using [AngularJS](http://angularjs.org/) and [Gulp](http://gulpjs.com/). It follows MVC architecture and uses the perfect app structure to enhance productivity. This seed contains a sample AngularJS application with use able Gulp tasks which comes in handy for the build process.
 
 ### Prerequisites
 
@@ -17,9 +17,7 @@ git clone https://github.com/donny08/angular-gulp-browsersync-seed.git
 cd angular-gulp-seed
 ```
 
-For installing dependencies in this project which would install the core packages using node and the angular packages using bower
-
-I have set pre-install script which installs bower too. Run this command to install the dependencies.
+For installing dependencies in this project which would install the core packages using node
 
 ```
 npm install
